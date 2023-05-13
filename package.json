@@ -1,0 +1,14 @@
+{
+  "name": "s4d-addon-sdk",
+  "version": "0.0.1",
+  "description": "Create Scratch for Discord addons at the speed of light using S4D addon SDK.",
+  "main": "index.js",
+  "repository": "https://github.com/retrouser955/s4d-addon-sdk",
+  "author": "retro_ig",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "types": "types.d.ts"
+}
