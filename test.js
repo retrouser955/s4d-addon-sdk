@@ -7,7 +7,7 @@ const builder = new AddonBuilder({
     version: require("./package.json").version,
 });
 
-builder.toolboxModifier((toolbox) => {
+builder.modifyToolbox((toolbox) => {
     return {
         ...toolbox,
         "kind": "category",

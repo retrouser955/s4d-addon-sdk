@@ -35,6 +35,17 @@ class AddonBuilder {
                     res.json(this.manifest)
                 })
 
+                this.app.get("/blocks/all", (req, res) => {
+                    const blockNames = Object.keys(this.blocks)
+
+                    const map = blockNames.map((val) => ({
+                        name: val,
+                        data: this.blocks[val].data
+                    }))
+
+                    res.json(map)
+                })
+
                 if(this.manifest.data.includes("theme")) {
                     this.app.get("/theme/:name", (req, res) => {
                         res.json(this.theme[req.params.name])
